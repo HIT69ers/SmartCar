@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="dynamic_server" pkg="dynamic_reconfigure" type="dyn1.py">
+  </node> 
+  <node name="dynamic_client" pkg="dynamic_reconfigure" type="dyn3.py">
+  </node> 
+
+</launch>

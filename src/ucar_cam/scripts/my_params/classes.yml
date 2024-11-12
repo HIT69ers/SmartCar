@@ -1,0 +1,25 @@
+#类别信息
+classes:
+  0: "bulletproof_vest"
+  1: "spontoon"
+  2: "teargas"
+  3: "terrorist3"
+  4: "terrorist2"
+  5: "terrorist1"
+  6: "first_aid_kit"
+
+rescue_cls:
+  - "bulletproof_vest"
+  - "first_aid_kit"
+  - "spontoon"
+  - "teargas"
+
+terrorist_cls:
+  - "one_terrorist"
+  - "two_terrorist"
+  - "three_terrorist"
+
+terrorist_map:
+  1: "spontoon"
+  2: "bulletproof_vest"
+  3: "teargas"

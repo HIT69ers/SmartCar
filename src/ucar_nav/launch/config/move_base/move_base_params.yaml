@@ -1,0 +1,34 @@
+#Description:
+# move_base软件包的通用配置参数,现在依次解释每个参数意义:
+#   shutdown_costmaps:当move_base在不活动状态时,是否关掉costmap.
+#   controller_frequency:向底盘控制移动话题cmd_vel发送命令的频率.
+#   controller_patience:在空间清理操作执行前,控制器花多长时间等有效控制下发.
+#   planner_frequency:全局规划操作的执行频率.如果设置为0.0,则全局规划器仅
+#       在接收到新的目标点或者局部规划器报告路径堵塞时才会重新执行规划操作.
+#   planner_patience:在空间清理操作执行前,留给规划器多长时间来找出一条有效规划.
+#   oscillation_timeout:执行修复机制前,允许振荡的时长.
+#   oscillation_distance:来回运动在多大距离以上不会被认为是振荡.
+#   base_local_planner:指定用于move_base的局部规划器名称.
+#   base_global_planner:指定用于move_base的全局规划器插件名称.
+#   recovery_behavior_enabled指定于move_base中是否允许遇到障碍物，进行恢复行为
+#   clearing_rotation_allowed指定于move_base中是否允许遇到障碍物，进行清除障碍物旋转行为
+
+shutdown_costmaps: false # 确定在节点处于非活动状态时是否关闭节点move_base成本图
+
+controller_frequency: 10.0 # 运行控制环路并将速度命令发送到基数的速率（以 Hz 为单位）
+controller_patience: 2.0 # 在执行空间清理操作之前，控制器将等待多长时间（以秒为单位）而没有收到有效的控件。
+
+planner_frequency: 0.0 # 运行全局计划循环的速率（以 Hz 为单位）。如果频率设置为 0.0，则全局计划程序仅在收到新目标或本地计划程序报告其路径被阻止时运行
+planner_patience: 5.0 # 在执行空间清理操作之前，计划人员将等待多长时间（以秒为单位）以尝试找到有效的计划
+
+oscillation_timeout: 8.0 # 在执行恢复行为之前允许振荡的时间（以秒为单位）。值 0.0 对应于无限超时
+oscillation_distance: 0.3 # 机器人必须移动多远（以米为单位）才能被视为不振荡
+
+recovery_behavior_enabled: true # 是否启用move_base恢复行为以尝试清除空间
+clearing_rotation_allowed: true # 确定机器人在尝试清理空间时是否尝试就地旋转
+
+#base_local_planner: "dwa_local_planner/DWAPlannerROS"
+#全局规划器用于move_base的插件的名称
+#base_global_planner: "astar_planner/AstarPlannerRos"
+#供本地规划器与move_base一起使用的插件的名称
+#

@@ -1,0 +1,7 @@
+image: /home/ucar/19th_ucar_ws/src/ucar_map/maps/map0404.pgm
+resolution: 0.050000
+origin: [-3.383266, -3.145949, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

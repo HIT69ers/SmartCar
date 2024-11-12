@@ -1,0 +1,22 @@
+#Description:
+#  本地代价地图需要配置的参数，各参数意义如下:
+#  global_frame:在本地代价地图中的全局坐标系;
+#  robot_base_frame:机器人本体的基坐标系;
+
+local_costmap:
+  global_frame: map # 要在其中运行的成本图的全球框架
+  robot_base_frame: base_link # 机器人基本链接的框架名称
+  update_frequency: 3.0  # 给move_base计算的。要更新的地图的频率（以 Hz 为单位）10.0
+  publish_frequency: 4.0 # 发布给rviz看。要发布的地图显示信息的频率（以 Hz 为单位）
+  # static_map: false # local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided
+  rolling_window: true # 是否使用成本图的滚动窗口版本。如果static_map参数设置为 true，则必须将此参数设置为 false
+  width: 2.5  # 地图的宽度（以米为单位）
+  height: 2.5  # 地图的高度（以米为单位）
+  resolution: 0.05 # 地图的分辨率（以米/单元格为单位）
+  transform_tolerance: 10 # 指定转换 （tf） 数据中可容忍的延迟（以秒为单位）
+  plugins:
+#插件规范序列，每层一个。每个规范都是一个包含名称和类型字段的字典。该名称用于定义插件的参数命名空间。
+#    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+    

@@ -1,0 +1,41 @@
+# capParamFlag: 'normal' # 摄像头设置参数
+
+# rescue_con: 0.6
+
+# to_mid_thre: 0.1
+# area_rate_thre: 0.45
+
+# teargas_area_c: 2
+# spontoon_area_c: 1.1
+# bulletproof_area_c: 1.0
+
+# trace_line: 1
+
+# model_file: "2024_4_7_best_c.pt"
+
+# thre_low: 160
+# thre_high: 220
+
+capParamFlag: 'normal' # 摄像头设置参数
+
+rescue_con: 0.6 
+
+to_mid_thre: 0.1
+# area_rate_thre: 0.45
+
+area_rate:
+  "spontoon": 0.6 #0.7 
+  "bulletproof_vest": 0.4 #0.45
+  "teargas": 0.45 # 0.45
+
+teargas_area_c: 1.8 #1.5
+spontoon_area_c: 1.3
+bulletproof_area_c: 1.0
+
+# trace_line: 0
+trace_line: 1
+
+model_file: "2024_5_23_final_best_c.pt"
+
+thre_low: 160
+thre_high: 220

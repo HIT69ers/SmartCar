@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="ucar_controller" name="base_driver" type="base_driver" output="screen" >
+    <rosparam command="load" file="$(find ucar_controller)/config/driver_params_mini.yaml" />
+    <!-- <rosparam command="load" file="$(find ucar_controller)/config/driver_params_xiao.yaml" /> -->
+  </node>
+  <!-- <node pkg="ucar_controller" name="sensor_tf_server" type="sensor_tf_server.py"/> -->
+
+</launch> 

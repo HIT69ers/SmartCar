@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="dynamic_client_global" pkg="dynamic_reconfigure" type="park_test1.py">
+  </node> 
+  <node name="dynamic_client_local" pkg="dynamic_reconfigure" type="park_test2.py">
+  </node> 
+  <node name="dynamic_client" pkg="dynamic_reconfigure" type="dr_test1.py">
+  </node> 
+
+</launch>

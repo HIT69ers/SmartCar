@@ -1,0 +1,13 @@
+# image: /home/ucar/ucar_ws/src/ucar_map/maps/nav_ps.png
+image: /home/ucar/ucar_ws/src/ucar_map/maps/nav-721.pgm
+
+# resolution: 0.0070000
+# origin: [-0.188170,-6.0, 0.000000]
+
+resolution: 0.050000
+origin: [-0.17,-6.2, 0.000000]
+
+# origin: [0,0, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

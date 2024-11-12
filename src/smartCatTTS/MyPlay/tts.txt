@@ -1,0 +1,8 @@
+恐怖分子的数量为一个:terrorist_num_1.wav
+恐怖分子的数量为二个:terrorist_num_2.wav
+恐怖分子的数量为三个:terrorist_num_3.wav
+我已取到警棍:spontoon.wav
+我已取到防弹衣:bulletproof_vest.wav
+我已取到催泪瓦斯:teargas.wav
+我已取到急救包:rescue.wav
+结束:over.wav

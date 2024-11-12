@@ -1,0 +1,7 @@
+image: /home/ucar/ucar_ws/src/ucar_map/maps/nav07.13_3.pgm
+resolution: 0.050000
+origin: [-0.863937, -6.745739, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

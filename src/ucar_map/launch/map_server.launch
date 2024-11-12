@@ -1,0 +1,5 @@
+<launch>
+  <arg name="map" default="map0510_1.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find ucar_map)/maps/$(arg map)"/>
+  <include file="$(find ucar_nav)/launch/config/amcl/amcl_omni.launch"/>
+</launch>

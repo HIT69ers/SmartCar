@@ -1,0 +1,20 @@
+#摄像头可选取的一些参数列表：亮度、对比度、饱和度
+bright:
+  BRIGHTNESS: 0.2
+  CONTRAST: 0.2
+  SATURATION: 0.1
+
+dark:
+  BRIGHTNESS: 0.54
+  CONTRAST: 0.3
+  SATURATION: 0.4
+
+backlight:
+  BRIGHTNESS: 0.3
+  CONTRAST: 0.8
+  SATURATION: 0.2
+
+normal:
+  BRIGHTNESS: 0.64
+  CONTRAST: 0.3
+  SATURATION: 0.5

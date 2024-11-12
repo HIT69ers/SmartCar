@@ -1,0 +1,7 @@
+variables.py:
+  mode:0  # 模式 0:旋转 1:雷达扫描
+nongoal.py:
+  A2F_x:1.095 # pid过桥A->F的x值
+  F2A_x:1.035 # pid过桥F->A的x值
+  park_x:0.005  # pid停车的x点坐标
+  park_y:-0.060 # pid停车的y点坐标

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ucar_cam" type="my_trace.py" name="pub_img" output="screen" />
+    <node pkg="ucar_cam" type="sub_img" name="sub_img" output="screen" />
+</launch>
