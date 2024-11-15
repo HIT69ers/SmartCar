@@ -1,6 +1,6 @@
 ### 导航与视觉交互
 
-每到一个识别区，
+小车每到达一个识别区，
 ```python
 rospy.set_param('take_photo', 1)
 ```
