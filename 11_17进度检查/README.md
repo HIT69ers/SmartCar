@@ -17,6 +17,7 @@ rospy.set_param('take_photo', 1)
 source ~/venv3.9/bin/activate
 ```
 以启动虚拟环境；
+
 2.启动节点
 ```bash
 roslaunch ucar_cam 11_15_rec.launch
