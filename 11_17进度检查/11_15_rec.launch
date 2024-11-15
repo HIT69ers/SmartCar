@@ -1,0 +1,35 @@
+<launch>
+    <!--my_rec测试launch文件-->
+    <!--开启rec节点进行判断-->
+    <node pkg="ucar_cam" type="11_15_rec.py" name="11_15_rec" output="screen" />
+    <!--后面手动设置为1-->
+    <!--启动识别主程序-->
+    <param name="rec_state" value="1" />
+
+    <!--room 1-terrorist 2-rescue-->
+    <param name="room" value="1" />
+
+    <!--启动拍照-->
+    <param name="take_photo" value="0" />
+
+    <!--恐怖分子搜索完成-->
+    <param name="terrorist" value="0" />
+
+    <!--急救包搜索-->
+    <param name="first_aid_kit" value="0" />
+
+    <!--救援物品中心点偏移量-->
+    <param name="rescue_x" value="160.0" />
+    <!--救援物品框的面积-->
+    <param name="rescue_area" value="0.0" />
+
+    <!--除了急救包外的救援物品搜索完成-->
+    <param name="rescue" value="0" />
+
+    <!--是否巡线-->
+    <param name="trace_line" value="0" />
+    <!--巡线是否开始-->
+    <param name="start_trace" value="0" />
+    <!--是否停车了-->
+    <param name="stop_flag" value="0" />
+</launch>
