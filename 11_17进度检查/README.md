@@ -52,4 +52,9 @@ rospy.set_param('take_photo', 1)
 
 ### 视觉部分后续工作
 
-每完成一次识别，向导航发布参数，说明当前识别状态
+1.该处代码需要补充：
+```python
+while not is_finish_first_aid_kit:
+    ...
+```
+2.每完成一次识别，向导航发布参数，说明当前识别状态
