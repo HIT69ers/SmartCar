@@ -14,7 +14,7 @@
 roscd ucar_cam
 ```
 2.文件目录关系
-```bash
+```
 |—— ucar_cam
 |   |—— launch
 |   |   |—— 11_15_rec.launch
