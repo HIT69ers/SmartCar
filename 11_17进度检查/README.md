@@ -13,13 +13,21 @@
 roscd ucar_cam
 ```
 2.文件目录关系
+
 |—— ucar_cam
+
 |   |—— launch
+
 |   |   |—— 11_15_rec.launch
+
 |   |—— scripts
+
 |   |   |—— 11_15_rec.py
+
 |   |   |—— my_params
+
 |   |   |   |—— classes.yml
+
 |   |   |   |—— rec_params.yml
 
 
