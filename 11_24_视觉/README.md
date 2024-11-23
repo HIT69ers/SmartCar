@@ -50,7 +50,7 @@ cd ~/ucar_ws
 - 启动节点
 
 ```bash
-roslaunch ucar_cam 11_24_rec.launch
+roslaunch ucar_cam 11_22_rec.launch
 ```
 
 #### 视觉与导航交互
