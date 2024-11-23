@@ -100,7 +100,7 @@ abs(to_mid) <= 0.4
 abs(to_mid) < config["to_mid_thre"] and area_rate > area_rate_thre and rospy.get_param('nongoal_flag') == 6:
 ```
 
-其中，**config["to_mid_thre"]**和**area_rate_thre**均为可调节的参数，位于**rec_params.yml**文件中，该文件位置：
+其中，**config["to_mid_thre"]** 和 **area_rate_thre**均为可调节的参数，位于**rec_params.yml**文件中，该文件位置：
 
 ```
 |—— ucar_cam
