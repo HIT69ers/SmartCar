@@ -44,8 +44,13 @@
       ```
       <param name="trace_line" value="1" />
       ```
-   3. 获取、调整**to_mid**和**area_rate**的理想值
-      
+   3. 获取、调整**to_mid**和**area_rate**的理想值及其他参数
+      1. 获取相关值
+         ![Image](https://github.com/HIT69ers/SmartCar/blob/main/12_8_视觉/1.jpg)
+      2. 调整相关值
+         1. rknn_rec_params.yml中**to_mid_thre**的值为成功识别救援物品的**to_mid**值的绝对值上限；
+         2. rknn_rec_params.yml中**area_rate**下三种救援物品及对应值分别为成功识别三种救援物品的**area_rate**值的下限；
+         3. rknn_rec_params.yml中**model_file**为视觉节点启动时加载的权重文件；
 2. 启动视觉节点
    ```bash
    conda activate rknnlite                                                   # 启动虚拟环境
@@ -74,4 +79,7 @@
       ```python
       rospy.set_param('start_trace', 1)
       ```
+
+***
+Ps：**rknn_detect.py**中Line 265的reference_2方法仍然需要调整：删去**Line 276**和**Line 285**的if...else判断；
       
