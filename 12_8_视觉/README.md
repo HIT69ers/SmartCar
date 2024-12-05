@@ -81,5 +81,5 @@
       ```
 
 ***
-Ps：**rknn_detect.py**中Line 265的reference_2方法仍然需要调整：删去**Line 276**和**Line 285**的if...else判断；
+[.pt->.onnx](https://github.com/ChuanSe/yolov5-PT-to-RKNN)
       
